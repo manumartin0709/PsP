@@ -3,12 +3,10 @@ package es.mmm.psp_ud1;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLConnection;
 
 public class tr18 
 {
@@ -23,23 +21,6 @@ public class tr18
 		catch (MalformedURLException malformedUrlException)
 		{
 			malformedUrlException.printStackTrace();
-		}
-		URL url = null;
-		URLConnection urlcon = null;
-		InputStream stream = null;
-		try
-		{
-			url = new URL ("htpps://www.marca.es");
-			urlcon = url.openConnection();
-			stream = urlcon.getInputStream();
-			int i;
-	        while ((i = stream.read()) != -1)
-	        {
-	        	System.out.print((char)i);
-	        }
-		} catch (Exception e)
-		{
-			System.out.println(e);
 		}
 		
 		
@@ -154,7 +135,5 @@ public class tr18
 		}
 		
 	}
-	
-	
 	
 }
